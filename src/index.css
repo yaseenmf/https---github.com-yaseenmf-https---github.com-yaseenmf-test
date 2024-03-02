@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Vazir;
+  src: url(./vazir-font-v16.1.0//Vazir-Light.woff) format(wff);
+}
+
+* {
+  font-family: Vazir;
+}
+
+.nav {
+  border: 1.5px solid rgba(133, 133, 133, 0.24);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-item-search {
+  display: flex;
+}
+
+.line {
+  border-left: 1.5px solid rgb(133, 133, 133, 0.24);
+  height: 2pc;
+}
+
+.map-icon {
+  height: 21px;
+  color: red;
+}
+
+.input-search {
+  border: 0.01rem solid rgb(116, 116, 116);
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.mapicon-line {
+  border-bottom: 1px solid black;
+}
+
+.activeinpute {
+  rotate: 30deg transform 2s linear;
+}
+
+.opendrop {
+  opacity: 1;
+  background-color: rgb(246 251 255);
+  position: absolute;
+  box-shadow: 0 0 20px rgb(209, 242, 255);
+  border-radius: 5px;
+  border: 1px solid rgb(184, 168, 221);
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.drop-btn {
+  background-color: aliceblue;
+  border: 0;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.Drop-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 0.2rem;
+}
+
+#dropnumber {
+  color: rgb(113 113 113);
+}
+
+.date {
+  position: absolute;
+}
+
+.dateicon {
+  display: flex;
+}
+
+.date-icon {
+  height: 21px;
+  color: rgb(64, 99, 255);
+  margin-right: 0.3rem;
+}
+
+.location-item {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.location-descs {
+  margin-left: 1rem;
+}
+
+.location-img {
+  width: 40rem;
+}
+
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.location-desc {
+  color: rgb(49, 49, 49);
+  font-size: 1.5rem;
+}
+
+.location-name {
+  font-size: 1.4rem;
+  color: rgb(85, 85, 85);
+}
+
+.location-price {
+  font-size: 0.7rem;
+  color: rgb(97, 97, 97);
+}
+
+.search-icon {
+  height: 30px;
+  width: 30px;
+  color: rgb(255, 255, 255);
+  rotate: -20deg;
+}
+
+.back-icon {
+  background-color: rgb(0, 0, 255);
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  rotate: 20deg;
+  border: none;
+  cursor: pointer;
+}
+
+.hotel-items {
+  border-radius: 12px;
+  display: flex;
+  width: 400px;
+  border: 1px solid black;
+  height: 150px;
+}
+
+.hotel-item-img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.hotel-link {
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.black {
+  color: black;
+}
+
+.mapContainer {
+  flex: 1;
+  background-color: var(--text-100);
+  position: relative;
+}
+
+.map {
+  height: 100%;
+}
+
+.sidebar {
+  width: 35%;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+
+.appLayout {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 130px);
+  align-items: stretch;
+}
